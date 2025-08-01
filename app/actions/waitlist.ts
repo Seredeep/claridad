@@ -44,10 +44,31 @@ export async function joinWaitlist(prevState: any, formData: FormData) {
         }
       }
     } else {
-      // User not found - they need to register in the app first
-      return {
-        message: "Email not found. Please register in our app first at demo.claridad.ar, then verify your email here.",
-        success: false,
+      // User not found - add them to waitlist directly
+      try {
+        const newUser = await addUserToWaitlist({
+          firstName: "User",
+          lastName: "From Waitlist",
+          email: email,
+          location: "Unknown",
+          interest: "Safety",
+          feedback: "Joined via waitlist"
+        })
+        
+        // Activate the user immediately
+        await verifyUserEmail(email)
+        
+        revalidatePath("/admin")
+        return {
+          message: "🎉 Welcome! You've been added to our active waitlist.",
+          success: true,
+        }
+      } catch (error) {
+        console.error("Error adding user to waitlist:", error)
+        return {
+          message: "Something went wrong while adding you to the waitlist. Please try again.",
+          success: false,
+        }
       }
     }
   } catch (error) {

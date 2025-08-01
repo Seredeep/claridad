@@ -91,7 +91,7 @@ export async function addUserToWaitlist(userData: Omit<WaitlistUser, '_id' | 'cr
   const newUser = {
     ...userData,
     email: userData.email.toLowerCase(),
-    enabled: false,
+    enabled: true,
     createdAt: new Date(),
   }
   

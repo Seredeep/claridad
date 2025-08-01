@@ -1,5 +1,6 @@
 import { WaitlistForm } from "@/components/waitlist-form"
 import { ClaridadLogo } from "@/components/claridad-logo"
+import { Analytics } from "@vercel/analytics/next"
 
 export default function HomePage() {
   return (
@@ -29,6 +30,7 @@ export default function HomePage() {
           <WaitlistForm />
         </div>
       </div>
+      <Analytics />
     </main>
   )
 }

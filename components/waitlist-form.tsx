@@ -51,7 +51,7 @@ export function WaitlistForm() {
           disabled={isPending}
           className="w-full bg-[#FF9B17] hover:bg-[#FF9B17]/90 text-white py-4 text-lg font-semibold transition-all duration-200 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
         >
-          {isPending ? "Verifying..." : "Verify Email"}
+          {"Join Waitlist"}
                   </Button>
         </form>
 

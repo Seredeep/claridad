@@ -51,27 +51,9 @@ export function WaitlistForm() {
           disabled={isPending}
           className="w-full bg-[#FF9B17] hover:bg-[#FF9B17]/90 text-white py-4 text-lg font-semibold transition-all duration-200 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
         >
-          {isPending ? "Verifying..." : "Verify Email"}
+          {"Join Waitlist"}
                   </Button>
         </form>
-
-        <div className="text-center space-y-2">
-          <p className="text-sm text-muted-foreground">
-            Already registered in our app? Verify your email here to join the waitlist.
-          </p>
-          <p className="text-xs text-muted-foreground/70">
-            New users: Register at{" "}
-            <a 
-              href="https://demo.claridad.ar" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-[#FF9B17] hover:underline"
-            >
-              demo.claridad.ar
-            </a>{" "}
-            first, then verify here.
-          </p>
-        </div>
       </div>
     )
 }

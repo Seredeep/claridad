@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Claridad - Crime Maps Waitlist",
-  description: "Real-time crime maps for safer communities worldwide",
+  description: "When neighborhoods fly blind, Claridad unites data for real-time safety.",
     generator: 'v0.dev'
 }
 

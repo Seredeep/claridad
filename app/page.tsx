@@ -8,18 +8,23 @@ export default function HomePage() {
       <div className="max-w-lg w-full text-center space-y-2">
         {/* Hero Section */}
         <div className="space-y-6">
-          <div className="space-y-1">
+          <div className="space-y-16">
+            <p className="text-xl text-muted-foreground leading-tight max-w-md mx-auto">
+            When neighborhoods fly blind,
+            </p>
             <div className="flex justify-center">
               <div className="transition-transform duration-300 hover:scale-110">
                 <ClaridadLogo size="xl" className="mx-auto" />
               </div>
             </div>
             <div className="space-y-3">
+            
+            
               <h1 className="text-6xl font-bold text-kiona-font tracking-[-0.07em] leading-tight">
                 CLARIDAD
               </h1>
               <p className="text-xl text-muted-foreground leading-tight max-w-md mx-auto">
-                Real-time crime maps for safer communities worldwide
+                unites data for real-time safety.
               </p>
             </div>
           </div>

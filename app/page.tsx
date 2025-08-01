@@ -8,7 +8,7 @@ export default function HomePage() {
       <div className="max-w-lg w-full text-center space-y-2">
         {/* Hero Section */}
         <div className="space-y-6">
-          <div className="space-y-16">
+          <div className="space-y-2">
             <p className="text-xl text-muted-foreground leading-tight max-w-md mx-auto">
             When neighborhoods fly blind,
             </p>
@@ -19,7 +19,6 @@ export default function HomePage() {
             </div>
             <div className="space-y-3">
             
-            
               <h1 className="text-6xl font-bold text-kiona-font tracking-[-0.07em] leading-tight">
                 CLARIDAD
               </h1>
@@ -28,11 +27,6 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-        </div>
-
-        {/* Waitlist Form */}
-        <div className="space-y-6 pt-4">
-          <WaitlistForm />
         </div>
       </div>
       <Analytics />
